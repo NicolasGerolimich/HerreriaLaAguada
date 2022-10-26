@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="shortcut icon" href="/imagenes/icono2.png" type="image/x-icon">
+    <title>Suscripción</title>
+</head>
+<body>
+    <section class="suscribe">
+        <div class="datosSuscribe">
+            <h1>Suscripción gratuita</h1>
+            <p>Completá el formulario con tus datos para recibir información actualizada de nuestros productos y ofertas destacadas y exclusivas. La suscripción es gratuita y los datos son confidenciales.</p>
+            <form action="enviar.php" method="post" enctype="text/plain">
+                <label for="names">Nombre:</label>
+                <input id="names" name="names" type="text" required>
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input id="apellido" name="apellido" type="text" required>
+                <br>
+                <label for="edad">Edad:</label>
+                <input id="edad" name="edad" type="number">
+                <br>
+                <label for="sexo1">Género:</label><br>
+                M<input type="radio" name="sexo1" id="sexo1" value="Masculino">
+                F<input type="radio" name="sexo1" id="sexo1" value="Masculino">
+                S/e<input type="radio" name="sexo1" id="sexo1" value="Masculino">
+                <br>
+                <label for="email">Correo:</label>
+                <input id="email name="email" type="email">
+                <br>
+                <label for="pass">Nueva clave:</label>
+                <input id="pass" name="pass" type="password">
+                <br>
+                <label for="pass">Repita su nueva clave:</label>
+                <input id="pass" name="pass" type="password">
+                <br>
+                <br>
+                <input type="submit">
+                <input type="reset" value="Reestablecer">
+            </form>
+            <br>
+            <h2>¡Muchas gracias!</h2>
+        </div>
+    </section>
+    <a href="/html/galeria.html" class="volver"><i class="fa-solid fa-backward"></i></a>
+</body>
+</html>
