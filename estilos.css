@@ -355,11 +355,49 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-image: url(/imagenes/fondo5.jpeg);
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: fit-content;
     color: rgb(255, 255, 255);
     font-family: 'Macondo', cursive;
     text-align: center;
+    background-attachment: fixed;
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
 }
+@keyframes fondo{
+    0%{
+        background-image: url(/imagenes/fondo5.jpeg);
+    }
+    10%{
+        background-color: black;
+    }
+    20%{
+        background-image: url(/imagenes/galeria12.jpeg);
+    }
+    30%{
+        background-color: black;
+    }
+    40%{
+        background-image: url(/imagenes/galeria2.jpeg);
+    }
+    50%{
+        background-color: black;
+    }
+    60%{
+        background-image: url(/imagenes/fondo.jpeg);
+    }
+    70%{
+        background-color: black;
+    }
+    80%{
+        background-image: url(/imagenes/galeria13.jpeg);
+    }
+    90%{
+        background-color: black;
+    }
+}
+
+
 
 .galeria h1{
     font-size: 50px;
@@ -374,14 +412,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     padding: 40px;
     width: 50%;
     height: fit-content;
-    margin-left: 25%;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
     box-sizing: border-box;
     letter-spacing: 2px;
     font-family: 'Macondo', cursive;
     border: 2px solid rgb(255, 255, 255);
     background-color: #000000b7;
-background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23333136' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23333136' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .cuadroGaleria a{
@@ -410,17 +450,25 @@ background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox=
     line-height: 200px;
 }
 
-/*toda el flex de la galeria quedo mal con el formato, por el recuadro que tiene arriba*/
 
 .fotos{
-    height: 500px;
+    height: auto;
     width: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 20px;
+    
+}
+.item{
+    width: 100%;
+    border: 2px solid wheat;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(100%);
 }
 
 .item1{
@@ -495,6 +543,82 @@ background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox=
     background-position: center;
 }
 
+@media only screen and (max-width:480px){
+    .cuadroGaleria{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }    
+}
+
+
+@media only screen and (min-width:480px){
+    .fotos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+        padding: 20px;
+    }
+    .cuadroGaleria{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .fotos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .item2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .item3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item5{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .item6{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .item7{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .item8{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .item9{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .item10{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .item11{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .item12{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+}
+
 /*SUSCRIPICON*/
 
 .suscribe{
@@ -503,6 +627,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox=
     background-image: url(/imagenes/galeria11.jpeg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .datosSuscribe{
@@ -517,7 +642,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox=
     font-family: 'Macondo', cursive;
     text-align: center;
     background-color: #000000b4;
-background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23323232' fill-opacity='0.28' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23323232' fill-opacity='0.28' fill-rule='evenodd'/%3E%3C/svg%3E");
     
 }
 
@@ -530,6 +655,65 @@ background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox=
     font-size: 20px;
     margin: 20px;
 }
+
+.datosSuscribe h2{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+input{
+    transition: all 2s;
+}
+
+input:focus{
+    font-size: 25px;
+    border: 5px solid grey;
+    color: black;
+}
+input::placeholder{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+
+.gracias
+
+@media only screen and (max-width:480px){
+    .suscribe{
+        height: fit-content;
+        width: fit-content;
+        background-position: cover;
+    }    
+    .datosSuscribe{
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width:480px) and (max-width:768px){
+    .suscribe{
+        height: fit-content;
+        width: fit-content;
+        background-position: cover;
+    }    
+    .datosSuscribe{
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
 
 /*CONTACTO*/
 
