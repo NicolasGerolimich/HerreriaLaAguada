@@ -352,7 +352,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /*GALERIA*/
 
 .galeria{
-    background-image: url(./imagenes/fondo5.jpeg);
+    background-image: url(../imagenes/fondo5.jpeg);
     background-size: cover;
     background-position: center;
     height: fit-content;
