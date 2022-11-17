@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="imagenes/icono2.png" type="image/x-icon">
     <title>Herrería La Aguada</title>
 </head>
+
 <body>
     <main>
-    <header>
-        <div class="logo">Herrería <span>La Aguada</span></div>
-        <nav class="barra">
-            <ul>
-                <li><a href="#sec1">🖐 Inicio</a></li>
-                <li><a href="#sec2">👨‍🔧 Quiénes somos</a></li>
-                <li><a href="#sec3">🎁 Productos</a></li>
-                <li><a href="#sec4">📞 Contacto</a></li>
-                <li><a href="./html/legales.html">📎 Legales</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- NAVBAR EMPIEZA -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#sec1"><img src="./imagenes/icono3.png" alt="logo" style="height: 60px; width: 60px"> Herrería La Aguada</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#sec1">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sec2">Quiénes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sec3">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sec4">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/legales.html">Legales</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        
     </main>
     <section class="sec" id="sec1">
         <div class="call">
             <h1>Bievenidos a la herrería de La Aguada</h1>
             <br>
-            <div class="icono"><img src="imagenes/icono.png" alt="icono" width="300px" height="100%"></div>
-            <p>Fundada en 2017, Herrería La Aguada surge  como un proyecto iniciado en Buenas Aires casi una década atrás.
+            <img class="icono" src="imagenes/icono.png" alt="icono" width="300px" height="100%">
+            <p>Fundada en 2017, Herrería La Aguada surge como un proyecto iniciado en Buenos Aires casi una década
+                atrás.
             </p>
-            <br>
             <br>
             <a href="#sec2">Más Info</a>
         </div>
+        
     </section>
 
     <section class="sec" id="sec2">
@@ -42,12 +70,16 @@
             <h2>Marcelo Gerolimich</h2>
             <h2>- Herrero Carpintero -</h2>
             <br>
-            <p>Iniciado en el rubro hace más de dos décadas, habiendo realizado varios cursos de profesionalización, se dedicó siempre como pasatiempo al oficio de la herrería y la carpintería, logrando un gran reconocimiento en el rubro a pesar de no dedicarse de lleno a eso. En el año 2017 decide alejarse del ruido de Buenos Aires para instalarse en el tranquilo pueblo de La Aguada, Uruguay, ya sí, dedicándose de lleno al oficio.</p>
+            <p>Iniciado en el rubro hace más de dos décadas, habiendo realizado varios cursos de profesionalización, se
+                dedicó siempre como pasatiempo al oficio de la herrería y la carpintería, logrando un gran
+                reconocimiento en el rubro a pesar de no dedicarse de lleno a eso. En el año 2017 decide alejarse del
+                ruido de Buenos Aires para instalarse en el tranquilo pueblo de La Aguada, Uruguay, ya sí, dedicándose
+                de lleno al oficio.</p>
             <br>
             <div class="redesMarce">
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
     </section>
@@ -56,34 +88,49 @@
         <div class="call3">
             <h2>Catálogo</h2>
             <br>
-            <p>Contamos con una amplia variedad de diseños, hechos a la medida que necesites. Te invitamos a ver la galería y a que te suscribas, para recibir información actualizada de cuando haya nuevos productos y seas el primero en poder disfrutarlos. También vas a poder acceder a descuentos y promociones.</p>
+            <p>Contamos con una amplia variedad de diseños, hechos a la medida que necesites. Te invitamos a ver la galería y a que te suscribas, para recibir información actualizada de cuando haya nuevos  productos y seas el primero en poder disfrutarlos. También vas a poder acceder a descuentos y promociones.</p>
             <br>
             <a href="./html/galeria.html">Ir a galería</a><a href="./html/suscribite.html">Suscribite</a>
         </div>
     </section>
     <section class="sec" id="sec4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6565.190394279524!2d-54.1636920739653!3d-34.63966862180063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95749c81096dc7fb%3A0x672bf75ed568baab!2sLa%20Aguada%2C%20Departamento%20de%20Rocha%2C%20Uruguay!5e0!3m2!1ses!2sar!4v1665084043613!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6565.190394279524!2d-54.1636920739653!3d-34.63966862180063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95749c81096dc7fb%3A0x672bf75ed568baab!2sLa%20Aguada%2C%20Departamento%20de%20Rocha%2C%20Uruguay!5e0!3m2!1ses!2sar!4v1665084043613!5m2!1ses!2sar"
+            width="600" height="300" style="border:10;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
         <div class="call4">
             <h2>Contacto</h2>
             <br>
-            <p>Podés comunicarte con nosotros por varios medios, o venir directamente al taller para ver los productos.</p>
+            <p>Podés comunicarte con nosotros por varios medios, o venir directamente al taller para ver los productos.
+            </p>
             <br>
             <a href="./html/contacto.html">Ir a contacto</a>
         </div>
     </section>
-        <footer>
-            <p> Copyright © 2022  |   Aviso legal</p>
-            <div class="redes">
+    <footer>
+        <p> Copyright © 2022 | Aviso legal</p>
+        <div class="redes">
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        
-        </footer>
+        </div>
+
+    </footer>
     <a href="#sec1" class="subir">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

@@ -11,71 +11,30 @@ html{
     scroll-behavior: smooth;
 }
 
-/*
-main{
-    
-    background-image: url(imagenes/fondo.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+.navbar{
+    background-color: rgba(0, 0, 0, 0.788) !important;
+    font-family: 'Macondo', cursive;
+    font-size: 30px;
 }
 
-*/
+.navbar-brand{
+    font-size: 40px !important;
+}
 
-header{
-    height: 80px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.658);
-    font-size: 30px;
-    font-family: 'Macondo', cursive;
-    color: antiquewhite;
-    text-transform: capitalize;
-    padding: 20px;
-    position: fixed;
+.nav-link{
+    color: white !important;
 }
 
 h1{
     text-shadow: 0 0 1px whitesmoke;
+    font-size: 20px;
 }
 
 h2{
     text-align: center;
 }
 
-.logo span{
-    color: aqua;
-}
-
-.logo{
-    float: left;
-    font-size: 45px;
-    font-family: 'Macondo', cursive;    
-}
-
-.barra{
-    float: right;
-}
-
-.barra ul{
-    list-style: none;
-}
-
-.barra a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.barra ul li{
-    display: inline-block;
-    padding-inline: 10px;
-}
-
-.barra a:hover{
-    color: aqua;
-    text-decoration: double;
-}
+/*INICIO*/
 
 .call{
     width: 32%;
@@ -93,9 +52,11 @@ h2{
     box-sizing: border-box; 
 }
 
+
 .icono{
     margin: auto;
     padding-left: 25px;
+    height: fit-content;
 }
 
 .call h1{
@@ -118,6 +79,8 @@ h2{
     border-color: orange;
 }
 
+
+/*QUIENES SOMOS*/
 
 .call2{
     width: 32%;
@@ -146,6 +109,10 @@ h2{
     color: white;
 }
 
+/*QUIENES SOMOS TERMINA*/
+
+
+/*PRODUCTOS*/
 
 .call3{
     width: 32%;
@@ -214,6 +181,7 @@ h2{
 }
 
 
+
 .sec{
     height: 700px;
     width: 100%;
@@ -254,6 +222,8 @@ h2{
     margin-left: 80px;
 }
 
+/*FOOTER*/
+
 footer{
     color: white;
     background-color: rgb(0, 0, 0);
@@ -264,7 +234,6 @@ footer{
 
 .redes{
     font-size: 50px;
-    padding: 20px;
     letter-spacing: 20px;
 }
 
@@ -293,6 +262,58 @@ footer{
     border-radius: 50%;
     box-shadow: 0 0 2px white;
 }
+
+@media only screen and (max-width: 1200px){
+
+    .call{
+        padding: auto;
+        width: auto;
+        height: auto;
+        margin-bottom: 10 px;
+        text-align: center;
+    }
+
+    .icono{
+        display: none;
+    }
+
+    .call2{
+        padding: 5px;
+        width: auto;
+        margin-bottom: 10 px;
+        
+    }
+
+    .call3{
+        padding: auto;
+        width: auto;
+        margin-bottom: 10 px;
+    }
+
+    #sec4 iframe{
+        display: none;
+    }
+
+    .call4{
+        padding: auto;
+        width: auto;
+        margin-bottom: 10 px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .navbar{        
+        font-size: 20px;
+    }
+    
+    .navbar-brand{
+        font-size: 30px !important;
+    }
+
+}
+
 
 /*LEGALES*/
 
@@ -356,6 +377,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-size: cover;
     background-position: center;
     height: fit-content;
+    padding: 20px;
     color: rgb(255, 255, 255);
     font-family: 'Macondo', cursive;
     text-align: center;
@@ -441,8 +463,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .item{
-    height: 200px;
-    width: 200px;
+    margin:;
+    height: 100%;
+    width: 100%;
     background-color: orange;
     border: 2px solid white;
     border-radius: 5%;
@@ -453,17 +476,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .fotos{
     height: auto;
-    width: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 200px);
     grid-gap: 20px;
     
 }
-.item{
-    width: 100%;
-    border: 2px solid wheat;
-}
+
 
 .item:hover{
     transform: scale(1.05);
@@ -534,7 +554,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .item11{
     background-image: url(./imagenes/galeria11.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
 .item12{
@@ -551,8 +571,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     }    
 }
 
-
-@media only screen and (min-width:480px){
+@media only screen and (min-width:480px) and (max-width: 767px){
     .fotos{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
@@ -570,52 +589,29 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         grid-template-columns: 1fr 1fr 1fr;
     }
     .item1{
-        grid-column: 1/2;
-        grid-row: 1/2;
+        grid-column: 1/3;
+        grid-row: 1/4;
     }
     .item2{
-        grid-column: 2/3;
-        grid-row: 1/2;
+        grid-column: 3/4;
+        grid-row: 1/3;
     }
     .item3{
         grid-column: 3/4;
-        grid-row: 1/2;
-    }
-    .item4{
-        grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 3/5;
     }
     .item5{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .item6{
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    .item7{
-        grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 4/6;
     }
     .item8{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .item9{
-        grid-column: 3/4;
-        grid-row: 3/4;
+        grid-row: 7/9;
     }
     .item10{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    .item11{
-        grid-column: 2/3;
-        grid-row: 4/5;
+        grid-row: 6/9;
     }
     .item12{
         grid-column: 3/4;
-        grid-row: 4/5;
+        grid-row: 7/9 ;
     }
 }
 
