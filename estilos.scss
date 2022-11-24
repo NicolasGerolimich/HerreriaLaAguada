@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Macondo&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.788) !important;
+    font-family: 'Macondo', cursive;
+    font-size: 30px;
+}
+
+.navbar-brand{
+    font-size: 40px !important;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+h1{
+    text-shadow: 0 0 1px whitesmoke;
+    font-size: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+/*INICIO*/
+
+.call{
+    width: 32%;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    font-family: 'Macondo', cursive;
+    text-align: justify;
+    letter-spacing: 2px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.904);
+    padding: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 20px;
+    margin-top: 100px;
+    box-sizing: border-box; 
+    h1{
+        text-align: center;
+    }
+    a{
+        background-color: rgb(49, 49, 49);
+        color:rgb(255, 255, 255) ;
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 8px 17px;
+        border: 2px solid rgb(172, 172, 172);
+        border-radius: 7px;
+    }
+    a:hover{
+        color: whitesmoke;
+        background-color: black;
+        border-color: orange;
+    }
+}
+
+.icono{
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: fit-content;
+}
+
+.carousel{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.carousel-inner{
+    border-radius: 5px;
+    border: 2px solid white !important;
+}
+
+@media only screen and (min-width: 1000px){
+    .carousel{
+        display: none;
+    }
+}
+
+
+/*QUIENES SOMOS*/
+
+.call2{
+    width: 32%;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    font-family: 'Macondo', cursive;
+    text-align: justify;
+    letter-spacing: 2px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.692);
+    padding: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 20px;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+.redesMarce{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 20px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+/*QUIENES SOMOS TERMINA*/
+
+
+/*PRODUCTOS*/
+
+.call3{
+    width: 32%;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    font-family: 'Macondo', cursive;
+    text-align: justify;
+    letter-spacing: 2px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 20px;
+    margin-top: 100px;
+    box-sizing: border-box;
+    a{
+        background-color: rgb(49, 49, 49);
+        color:rgb(255, 255, 255) ;
+        text-decoration: none;
+        margin: 20px;
+        padding: 8px 17px;
+        border: 2px solid rgb(172, 172, 172);
+        border-radius: 7px;
+        text-align: center;
+    }
+    a:hover{
+        color: whitesmoke;
+        background-color: black;
+        border-color: orange;
+    }
+}
+
+.call4{
+    width: 32%;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    font-family: 'Macondo', cursive;
+    text-align: justify;
+    letter-spacing: 2px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 20px;
+    margin-top: 100px;
+    box-sizing: border-box;
+    a{
+        background-color: rgb(49, 49, 49);
+        color:rgb(255, 255, 255) ;
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 8px 17px;
+        border: 2px solid rgb(172, 172, 172);
+        border-radius: 7px;
+    }
+    a:hover{
+        color: whitesmoke;
+        background-color: black;
+        border-color: orange;
+    }
+}
+
+
+.sec{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+}
+
+#sec1{
+    height: 100vh;
+    background-image: url(./imagenes/fondo2.jpeg);
+    background-position: top;
+    background-size: cover;
+}
+
+#sec2{
+    height: 100vh;
+    background-image: url(./imagenes/fondo3.jpeg);
+    background-position: top;
+    background-size: cover; 
+}
+
+#sec3{
+    height: 100vh;
+    background-image: url(./imagenes/fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sec4{
+    height: 83vh;
+    background-image: url(./imagenes/fondo5.jpeg);
+    background-position: top;
+    background-size: cover;
+}
+
+.mapa{
+    float: left;
+    margin-top: 160px;
+    margin-left: 80px;
+}
+
+/*FOOTER*/
+
+footer{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+.redes{
+    font-size: 50px;
+    letter-spacing: 20px;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: grey;
+        text-shadow: 0 0 2px whitesmoke;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .redes{
+        font-size: 30px;
+    }
+}
+
+.subir{
+    height: 45px;
+    width: 45px;
+    background-color: rgba(2, 2, 2, 0.685);
+    border: solid rgb(243, 112, 24) 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 0 px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px white;
+}
+
+/*MEDIA QUERYS*/
+
+@media only screen and (max-width: 1300px){
+    .call2{
+        padding: 5px;
+        width: auto;
+        margin-bottom: 10 px;
+        
+    }
+}
+
+@media only screen and (max-width: 1000px){
+
+    .call{
+        padding: auto;
+        width: auto;
+        height: auto;
+        margin-bottom: 10 px;
+        text-align: center;
+    }
+
+    .icono{
+        display: none;
+    }
+
+    .call3{
+        padding: auto;
+        width: auto;
+        margin-bottom: 10 px;
+    }
+
+    #sec4 iframe{
+        display: none;
+    }
+
+    .call4{
+        padding: auto;
+        width: auto;
+        margin-bottom: 10 px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .navbar{        
+        font-size: 20px;
+    }
+    
+    .navbar-brand{
+        font-size: 21px !important;
+    }
+
+}
+
+
+/*LEGALES*/
+
+.legales{
+    text-align: justify;
+    background-color: black;
+    color: white;
+    background-color: #1c1c1d;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23000000' fill-opacity='0.16'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    h1{
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+    }
+    h2{
+        margin: 40px;
+    }
+    h3{
+        margin: 20px;
+    }
+    p{
+        padding: 20px;
+    }
+    ol{
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-bottom: 60px;
+    }
+}
+
+.volver{
+    height: 45px;
+    width: 45px;
+    background-color: rgba(2, 2, 2, 0.685);
+    border: solid rgb(243, 112, 24) 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    line-height: 165%;
+    border-radius: 50%;
+    box-shadow: 0 0 2px white;
+}
+
+#aclaracion{
+    text-align: center;
+    font-size: 30px;
+}
+
+/*GALERIA*/
+
+.galeria{
+    background-image: url(../imagenes/fondo5.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: fit-content;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Macondo', cursive;
+    text-align: center;
+    background-attachment: fixed;
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+@keyframes fondo{
+    0%{
+        background-image: url(./imagenes/fondo5.jpeg);
+    }
+    10%{
+        background-color: black;
+    }
+    20%{
+        background-image: url(./imagenes/galeria12.jpeg);
+    }
+    30%{
+        background-color: black;
+    }
+    40%{
+        background-image: url(./imagenes/galeria2.jpeg);
+    }
+    50%{
+        background-color: black;
+    }
+    60%{
+        background-image: url(./imagenes/fondo.jpeg);
+    }
+    70%{
+        background-color: black;
+    }
+    80%{
+        background-image: url(./imagenes/galeria13.jpeg);
+    }
+    90%{
+        background-color: black;
+    }
+}
+
+.cuadroGaleria{
+    background-color: black;
+    padding: 40px;
+    width: 50%;
+    height: fit-content;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    font-family: 'Macondo', cursive;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #000000b7;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23333136' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
+    a{
+        background-color: rgb(49, 49, 49);
+        color:rgb(255, 255, 255) ;
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 8px 17px;
+        border: 2px solid rgb(172, 172, 172);
+        border-radius: 7px;
+    }
+    a:hover{
+        color: whitesmoke;
+        background-color: black;
+        border-color: orange;
+    }
+}
+.item{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    border: 2px solid white;
+    border-radius: 5%;
+    text-align: center;
+    line-height: 200px;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(100%);
+}
+
+.fotos{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 20px;
+    
+}
+
+.item1{
+    background-image: url(./imagenes/galeria1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2{
+    background-image: url(./imagenes/galeria2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3{
+    background-image: url(./imagenes/galeria3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4{
+    background-image: url(./imagenes/galeria4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5{
+    background-image: url(./imagenes/galeria5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6{
+    background-image: url(./imagenes/galeria6.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7{
+    background-image: url(./imagenes/galeria7.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item8{
+    background-image: url(./imagenes/galeria8.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item9{
+    background-image: url(./imagenes/galeria9.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item10{
+    background-image: url(./imagenes/galeria10.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item11{
+    background-image: url(./imagenes/galeria11.jpeg);
+    background-size: cover;
+    background-position: left;
+}
+
+.item12{
+    background-image: url(./imagenes/galeria12.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:480px){
+
+    .fotos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 200px);
+        padding: 20px;
+    }
+    .cuadroGaleria{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }    
+}
+
+@media only screen and (min-width:480px) and (max-width: 767px){
+    .fotos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 200px);
+        padding: 20px;
+    }
+    .cuadroGaleria{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .fotos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+    .item2{
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    .item3{
+        grid-column: 3/4;
+        grid-row: 3/5;
+    }
+    .item5{
+        grid-row: 4/6;
+    }
+    .item8{
+        grid-row: 7/9;
+    }
+    .item10{
+        grid-row: 6/9;
+    }
+    .item12{
+        grid-column: 3/4;
+        grid-row: 7/9 ;
+    }
+}
+
+/*SUSCRIPICON*/
+
+.suscribe{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./imagenes/galeria11.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.datosSuscribe{
+    height: 80%;
+    width: 80%;
+    background-color: black;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: inline-block;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Macondo', cursive;
+    text-align: center;
+    background-color: #000000b4;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23323232' fill-opacity='0.28' fill-rule='evenodd'/%3E%3C/svg%3E");
+    h1{
+        font-size: 50px;
+        margin: 30px;
+    }
+    p{
+        font-size: 20px;
+        margin: 20px;
+    }
+    h2{
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-delay: 5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes aparecer{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+}
+
+input{
+    transition: all 2s;
+}
+
+input:focus{
+    font-size: 15px;
+    border: 5px solid grey;
+    color: black;
+}
+
+input::placeholder{
+    color: red;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+
+@media only screen and (max-width:480px){
+    .suscribe{
+        height: fit-content;
+        width: fit-content;
+        background-position: cover;
+    }    
+    .datosSuscribe{
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width:480px) and (max-width:768px){
+    .suscribe{
+        height: fit-content;
+        width: fit-content;
+        background-position: cover;
+    }    
+    .datosSuscribe{
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*CONTACTO*/
+
+.contacto{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./imagenes/galeria2.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.datosContacto{
+    height: 80%;
+    width: 80%;
+    background-color: black;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: inline-block;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Macondo', cursive;
+    text-align: center;
+    background-color: #000000b4;
+    h1{
+        font-size: 50px;
+        margin: 30px;
+    }
+}
+@media only screen and (max-width:480px){
+    #comentarios{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:481px){
+    #comentarios2{
+        display: none;
+    }
+}
