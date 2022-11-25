@@ -591,7 +591,7 @@ footer {
 }
 /*SUSCRIPICON*/
 .suscribe {
-  height: 100vh;
+  height: 100vh !important;
   width: 100%;
   background-image: url(./imagenes/galeria11.jpeg);
   background-size: cover;
